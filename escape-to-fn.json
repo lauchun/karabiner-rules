@@ -1,0 +1,31 @@
+{
+  "title": "Change Escape to Fn on press and hold",
+  "rules": [
+    {
+      "description": "Change Escape to Fn on press and hold",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "fn"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
